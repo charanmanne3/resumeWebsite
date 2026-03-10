@@ -3,6 +3,7 @@ import { Inter } from "next/font/google";
 import { Analytics } from "@vercel/analytics/react";
 import { Navbar } from "@/components/navbar";
 import { Footer } from "@/components/footer";
+import { DataEngineeringBackground } from "@/components/DataEngineeringBackground";
 import { SITE_CONFIG } from "@/lib/constants";
 import "./globals.css";
 
@@ -107,6 +108,7 @@ export default function RootLayout({
         />
       </head>
       <body className={`${inter.variable} font-sans antialiased`}>
+        <DataEngineeringBackground />
         <Navbar />
         <main className="min-h-screen">{children}</main>
         <Footer />
