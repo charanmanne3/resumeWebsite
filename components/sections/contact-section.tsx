@@ -113,7 +113,7 @@ export function ContactSection() {
               {contactInfo.map((item) => {
                 const Icon = item.icon;
                 const content = (
-                  <div className="flex items-start gap-4 p-4 rounded-xl border border-border/50 bg-card/50 backdrop-blur-sm hover:bg-card/80 transition-colors">
+                  <div className="flex items-start gap-4 p-4 rounded-xl border border-slate-700/50 bg-slate-900/60 backdrop-blur-md hover:bg-slate-900/80 transition-colors">
                     <div className="flex h-10 w-10 shrink-0 items-center justify-center rounded-lg bg-primary/10 text-primary">
                       <Icon className="h-5 w-5" />
                     </div>

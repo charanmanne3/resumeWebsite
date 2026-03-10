@@ -17,56 +17,56 @@ export function DataEngineeringBackground() {
       detectRetina: true,
       particles: {
         number: {
-          value: 60,
+          value: 70,
           density: {
             enable: true,
-            area: 1000,
+            area: 900,
           },
         },
         color: {
-          value: "#38BDF8",
+          value: "#60A5FA",
         },
         shape: {
           type: "circle",
         },
         opacity: {
-          value: { min: 0.15, max: 0.5 },
+          value: { min: 0.4, max: 0.7 },
           animation: {
             enable: true,
-            speed: 0.4,
-            minimumValue: 0.1,
+            speed: 0.5,
+            minimumValue: 0.3,
             sync: false,
           },
         },
         size: {
-          value: { min: 1, max: 3.5 },
+          value: { min: 1.5, max: 4 },
           animation: {
             enable: true,
-            speed: 1,
-            minimumValue: 0.5,
+            speed: 1.2,
+            minimumValue: 0.8,
             sync: false,
           },
         },
         shadow: {
-          blur: 8,
-          color: "rgba(56,189,248,0.5)",
+          blur: 12,
+          color: "rgba(96,165,250,0.6)",
           enable: true,
         },
         links: {
           enable: true,
-          distance: 160,
-          color: "#0EA5E9",
-          opacity: 0.12,
-          width: 1,
+          distance: 170,
+          color: "#38BDF8",
+          opacity: 0.6,
+          width: 1.2,
           triangles: {
             enable: true,
-            opacity: 0.015,
-            color: "#0EA5E9",
+            opacity: 0.03,
+            color: "#38BDF8",
           },
         },
         move: {
           enable: true,
-          speed: 0.4,
+          speed: 0.6,
           direction: "none",
           random: true,
           straight: false,
@@ -95,10 +95,10 @@ export function DataEngineeringBackground() {
         },
         modes: {
           grab: {
-            distance: 140,
+            distance: 160,
             links: {
-              opacity: 0.25,
-              color: "#38BDF8",
+              opacity: 0.8,
+              color: "#60A5FA",
             },
           },
         },
@@ -112,12 +112,26 @@ export function DataEngineeringBackground() {
 
   return (
     <div className="fixed inset-0 -z-10" aria-hidden="true">
+      {/* Base gradient — brighter slate/blue/indigo */}
+      <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950" />
+
+      {/* Radial glow accents for depth */}
       <div
         className="absolute inset-0"
-        style={{ backgroundColor: "#020617" }}
+        style={{
+          backgroundImage: [
+            "radial-gradient(circle at 20% 30%, rgba(56,189,248,0.15), transparent 40%)",
+            "radial-gradient(circle at 80% 70%, rgba(99,102,241,0.15), transparent 40%)",
+            "radial-gradient(circle at 50% 50%, rgba(96,165,250,0.08), transparent 50%)",
+          ].join(", "),
+        }}
       />
 
-      <div className="absolute inset-0 blur-[0.5px]">
+      {/* Particle network with glow filter */}
+      <div
+        className="absolute inset-0"
+        style={{ filter: "drop-shadow(0 0 6px rgba(96,165,250,0.6))" }}
+      >
         <Particles
           id="data-engineering-particles"
           init={particlesInit}
@@ -126,7 +140,8 @@ export function DataEngineeringBackground() {
         />
       </div>
 
-      <div className="absolute inset-0 bg-gradient-to-b from-slate-950/80 via-slate-950/60 to-slate-950/90" />
+      {/* Light gradient overlay to preserve text readability */}
+      <div className="absolute inset-0 bg-gradient-to-b from-slate-900/40 via-transparent to-slate-950/60" />
     </div>
   );
 }

@@ -44,7 +44,7 @@ export function ExperienceSection() {
                     <div className="md:pl-8 flex-1 min-w-0">
                       <motion.div
                         className={cn(
-                          "rounded-xl border border-border bg-card p-6",
+                          "rounded-xl border border-slate-700 bg-slate-900/70 backdrop-blur-md p-6",
                           "shadow-sm hover:shadow-md transition-shadow"
                         )}
                         whileHover={{ scale: 1.01 }}
