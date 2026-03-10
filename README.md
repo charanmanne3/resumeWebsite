@@ -1,5 +1,5 @@
 # Sree Charan Sai Manne — Developer Portfolio
-
+Created by me.
 A modern, AI-powered developer portfolio built with Next.js 14, optimized for recruiters and hiring managers.
 
 **Live:** [charanmanne.dev](https://charanmanne.dev)
