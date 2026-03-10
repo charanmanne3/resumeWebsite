@@ -9,7 +9,7 @@ export const SITE_CONFIG = {
   phone: "+1 469-288-9158",
   location: "Denton, Texas",
   github: "https://github.com/charanmanne",
-  linkedin: "https://linkedin.com/in/manne-sree-charan-sai",
+  linkedin: "https://www.linkedin.com/in/manne-sree-charan-sai-777196217",
   resumeUrl: "/resume.pdf",
 };
 
