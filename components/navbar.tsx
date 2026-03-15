@@ -34,13 +34,6 @@ export function Navbar() {
     >
       <nav className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
         <div className="flex h-16 items-center justify-between">
-          <Link
-            href="/"
-            className="text-lg font-bold tracking-tight hover:opacity-80 transition-opacity"
-          >
-            <span className="gradient-text">CSM</span>
-          </Link>
-
           <div className="hidden md:flex items-center gap-1">
             {NAV_LINKS.map((link) => (
               <Link
