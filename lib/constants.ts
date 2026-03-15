@@ -10,7 +10,7 @@ export const SITE_CONFIG = {
   location: "Denton, Texas",
   github: "https://github.com/charanmanne3",
   linkedin: "https://www.linkedin.com/in/manne-sree-charan-sai-777196217",
-  resumeUrl: "/resume.pdf",
+  resumeUrl: "/charan_resume.pdf",
 };
 
 export const NAV_LINKS = [

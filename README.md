@@ -130,7 +130,7 @@ Add these in your Vercel project settings under **Settings → Environment Varia
 
 ## Adding Your Resume
 
-Place your resume PDF at `public/resume.pdf`. The "Download Resume" button in the hero section links to this file.
+Place your resume PDF at `public/charan_resume.pdf`. The "Download Resume" button in the hero section links to this file.
 
 ## Customization
 

@@ -59,10 +59,14 @@ export function Hero() {
               </Link>
             </Button>
             <Button asChild variant="outline" size="lg">
-              <Link href={SITE_CONFIG.resumeUrl} className="gap-2" target="_blank" rel="noopener noreferrer">
-                Download Resume
+              <a
+                href={SITE_CONFIG.resumeUrl}
+                download="charan_resume.pdf"
+                className="flex items-center gap-2"
+              >
                 <Download className="h-4 w-4" />
-              </Link>
+                Download Resume
+              </a>
             </Button>
             <Button asChild variant="ghost" size="lg">
               <Link href="/contact" className="gap-2">
