@@ -16,11 +16,7 @@ export function About() {
           {/* About text - left column */}
           <FadeIn delay={0.1}>
             <p className="text-muted-foreground text-lg leading-relaxed">
-              Motivated graduate student in Computer Information Sciences with
-              hands-on experience building AI chatbots, cloud-based systems, and
-              full-stack applications. Strong collaborator and fast learner
-              seeking entry-level roles in Software Engineering, Cloud
-              Engineering, or Data Engineering.
+              Graduate student in Computer Science with hands-on experience building ETL pipelines, cloud-native analytics workflows, and AI-enabled applications using Python, SQL, Spark, Airflow, Docker, PostgreSQL, AWS, and Snowflake. Interested in Data Engineering and AI/ML roles focused on scalable data platforms, workflow orchestration, and real-time analytics.
             </p>
           </FadeIn>
 

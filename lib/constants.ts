@@ -1,14 +1,14 @@
 export const SITE_CONFIG = {
   name: "Sree Charan Sai Manne",
-  title: "Sree Charan Sai Manne | Software Engineer",
+  title: "Sree Charan Sai Manne | Data Engineer | AI/ML Engineer",
   description:
-    "Software Engineer specializing in Cloud, Data, and AI. Building scalable cloud systems and AI-powered applications.",
+    "Data Engineer and AI/ML Engineer building scalable ETL pipelines, cloud data platforms, and AI-powered analytics applications.",
   url: "https://charanmanne.dev",
   ogImage: "/og.png",
   email: "charanmanne3@gmail.com",
-  phone: "+1 469-288-9158",
+  phone: "+1 (469) 288-9158",
   location: "Denton, Texas",
-  github: "https://github.com/charanmanne",
+  github: "https://github.com/charanmanne3",
   linkedin: "https://www.linkedin.com/in/manne-sree-charan-sai-777196217",
   resumeUrl: "/resume.pdf",
 };

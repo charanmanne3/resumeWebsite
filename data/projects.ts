@@ -11,30 +11,30 @@ export interface Project {
 
 export const projects: Project[] = [
   {
-    title: "Rental Management System",
+    title: "Tech Job Market Analytics Pipeline",
     description:
-      "Full-stack rental platform with booking, enquiry management, and package management deployed on AWS.",
+      "Engineered an end-to-end ETL pipeline that ingests tech job postings from APIs, transforms the data, and loads analytics-ready datasets into PostgreSQL. Airflow DAGs orchestrate extraction and transformation while a Streamlit dashboard visualizes hiring trends, skills demand, and market signals.",
     longDescription:
-      "A comprehensive rental management solution featuring user authentication, property listings, booking management, enquiry tracking, and dynamic package management. Built with Django backend, MongoDB for flexible data storage, and deployed on AWS for scalable cloud hosting.",
-    technologies: ["Django", "MongoDB", "AWS", "Python", "HTML", "CSS", "JavaScript"],
+      "A comprehensive ETL pipeline that automates the collection and analysis of tech job market data. Built with Apache Airflow for workflow orchestration, Python for data processing, Pandas for transformation, and Streamlit for interactive dashboards. The pipeline ingests data from job APIs, cleans and transforms it, and loads it into PostgreSQL for analytics. The Streamlit dashboard provides visualizations of hiring trends, in-demand skills, and market signals.",
+    technologies: ["Python", "Apache Airflow", "Docker", "PostgreSQL", "Pandas", "Streamlit"],
     featured: true,
   },
   {
-    title: "Java Full Stack Application",
+    title: "Autonomous Data Science Lab",
     description:
-      "Book selling and recommendation system with REST APIs and microservices architecture.",
+      "Built a modular multi-agent workflow that automates dataset loading, cleaning, feature engineering, model training, evaluation, and reporting. Implemented experiment tracking with MLflow and exposed the pipeline via FastAPI with scheduled orchestration using Airflow.",
     longDescription:
-      "A microservices-based book commerce platform featuring book catalog management, personalized recommendations, user reviews, and order processing. Built with Spring Boot microservices communicating via REST APIs with service discovery and API gateway patterns.",
-    technologies: ["Spring Boot", "Java", "Microservices", "REST API", "MySQL"],
+      "An automated machine learning pipeline that orchestrates the full data science lifecycle. The multi-agent system handles dataset loading, data cleaning, feature engineering, model training with scikit-learn, evaluation, and reporting. MLflow tracks experiments for reproducibility. The pipeline is exposed via FastAPI and scheduled with Apache Airflow for automated runs.",
+    technologies: ["Python", "FastAPI", "Airflow", "MLflow", "scikit-learn", "Docker", "PostgreSQL"],
     featured: true,
   },
   {
-    title: "AI Chatbot Platform",
+    title: "Real-Time Cloud Data Pipeline",
     description:
-      "Enterprise AI chatbot system powered by Snowflake CortexAI for natural language data interaction.",
+      "Built a cloud-native pipeline that ingests data from Salesforce APIs and web sources into S3, transforms records using PySpark in AWS Glue, and exposes analytics-ready datasets through Athena with dashboards in QuickSight.",
     longDescription:
-      "An intelligent chatbot platform that enables business users to interact with enterprise datasets using natural language. Powered by Snowflake CortexAI for advanced NLP capabilities with a Streamlit-based user interface.",
-    technologies: ["Python", "Snowflake", "CortexAI", "Streamlit", "SQL"],
+      "A serverless data pipeline on AWS that ingests data from Salesforce APIs and web sources into S3. AWS Glue with PySpark handles transformation and schema evolution. Amazon Athena provides SQL querying over the data lake, and QuickSight dashboards enable business intelligence and reporting.",
+    technologies: ["AWS Glue", "PySpark", "Athena", "QuickSight", "S3", "Salesforce APIs"],
     featured: true,
   },
 ];

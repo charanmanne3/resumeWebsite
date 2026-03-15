@@ -5,7 +5,7 @@ import {
   Globe,
   Cloud,
   Brain,
-  Wrench,
+  Database,
   type LucideIcon,
 } from "lucide-react";
 import { cn } from "@/lib/utils";
@@ -28,7 +28,7 @@ const iconMap: Record<string, LucideIcon> = {
   Globe,
   Cloud,
   Brain,
-  Wrench,
+  Database,
 };
 
 export function SkillsSection() {

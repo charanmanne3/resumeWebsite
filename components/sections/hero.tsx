@@ -34,13 +34,19 @@ export function Hero() {
 
         <FadeIn delay={0.3}>
           <p className="text-lg md:text-xl text-muted-foreground mb-3">
-            Software Engineer | Cloud | Data | AI
+            Data Engineer | AI/ML Engineer
           </p>
         </FadeIn>
 
         <FadeIn delay={0.4}>
           <p className="text-base text-muted-foreground max-w-2xl mx-auto mb-8">
-            Building scalable cloud systems and AI-powered applications.
+            Building scalable data pipelines, AI-powered analytics platforms, and cloud-native data workflows.
+          </p>
+        </FadeIn>
+
+        <FadeIn delay={0.5}>
+          <p className="text-sm text-muted-foreground max-w-2xl mx-auto mb-8">
+            Graduate student specializing in Data Engineering and AI systems with experience designing ETL pipelines, workflow orchestration, and cloud-native analytics platforms using Python, Spark, Airflow, and AWS.
           </p>
         </FadeIn>
 
@@ -87,7 +93,7 @@ export function Hero() {
               <div className="text-xs text-muted-foreground">Years Experience</div>
             </div>
             <div className="text-center">
-              <div className="text-2xl font-bold text-foreground">4</div>
+              <div className="text-2xl font-bold text-foreground">3</div>
               <div className="text-xs text-muted-foreground">Certifications</div>
             </div>
             <div className="text-center">

@@ -6,7 +6,7 @@ import { fetchGitHubRepos } from "@/lib/github";
 export const metadata: Metadata = {
   title: "Projects",
   description:
-    "Explore my software engineering projects including full-stack applications, AI chatbots, and cloud-deployed systems.",
+    "Data engineering and AI/ML projects: ETL pipelines, analytics platforms, cloud-native workflows, and autonomous data science systems.",
 };
 
 export default async function ProjectsPage() {

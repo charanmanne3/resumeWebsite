@@ -11,7 +11,7 @@ export interface GitHubRepo {
   updated_at: string;
 }
 
-const GITHUB_USERNAME = "charanmanne";
+const GITHUB_USERNAME = "charanmanne3";
 
 export async function fetchGitHubRepos(): Promise<GitHubRepo[]> {
   try {

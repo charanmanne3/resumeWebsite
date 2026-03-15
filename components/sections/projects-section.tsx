@@ -1,10 +1,11 @@
 "use client";
 
 import Link from "next/link";
-import { Folder, ExternalLink } from "lucide-react";
+import { Folder, Github } from "lucide-react";
 import { cn } from "@/lib/utils";
 import { FadeIn, StaggerContainer, StaggerItem, motion } from "@/components/motion";
 import { Badge } from "@/components/ui/badge";
+import { Button } from "@/components/ui/button";
 import {
   Card,
   CardContent,
@@ -24,8 +25,7 @@ export function ProjectsSection() {
             <span className="gradient-text">Projects</span>
           </h2>
           <p className="text-muted-foreground mb-12">
-            A selection of projects I&apos;ve built — from full-stack applications
-            to AI-powered tools.
+            Data engineering and AI/ML projects — ETL pipelines, analytics platforms, and cloud-native workflows.
           </p>
         </FadeIn>
 
@@ -41,32 +41,38 @@ export function ProjectsSection() {
                   }}
                   transition={{ duration: 0.2 }}
                   className={cn(
-                    "h-full rounded-xl",
+                    "h-full rounded-xl transition-all duration-200",
                     project.featured &&
                       "bg-gradient-to-br from-primary/30 via-primary/10 to-transparent p-[1px]"
                   )}
                 >
                   <Card
                     className={cn(
-                      "h-full transition-colors",
+                      "h-full transition-colors hover:border-primary/30",
                       project.featured && "border-0"
                     )}
                   >
                     <CardHeader className="flex flex-row items-start justify-between gap-2">
-                      <div className="flex items-center gap-2">
+                      <div className="flex items-center gap-2 min-w-0">
                         <Folder className="h-5 w-5 text-primary shrink-0" />
-                        <CardTitle className="text-lg">{project.title}</CardTitle>
+                        <CardTitle className="text-lg truncate">{project.title}</CardTitle>
                       </div>
                       {project.github && (
-                        <Link
-                          href={project.github}
-                          target="_blank"
-                          rel="noopener noreferrer"
-                          className="text-muted-foreground hover:text-foreground transition-colors shrink-0"
-                          aria-label={`View ${project.title} on GitHub`}
+                        <Button
+                          asChild
+                          variant="ghost"
+                          size="icon"
+                          className="shrink-0 h-8 w-8"
                         >
-                          <ExternalLink className="h-4 w-4" />
-                        </Link>
+                          <Link
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            aria-label={`View ${project.title} on GitHub`}
+                          >
+                            <Github className="h-4 w-4" />
+                          </Link>
+                        </Button>
                       )}
                     </CardHeader>
                     <CardContent className="space-y-4">

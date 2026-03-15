@@ -9,11 +9,11 @@ export function Footer() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           <div>
             <Link href="/" className="text-lg font-bold tracking-tight">
-              <span className="gradient-text">Charan Manne</span>
+              <span className="gradient-text">{SITE_CONFIG.name}</span>
             </Link>
             <p className="mt-3 text-sm text-muted-foreground max-w-xs">
-              Software Engineer specializing in Cloud, Data, and AI. Building
-              scalable systems and AI-powered applications.
+              Data Engineer and AI/ML Engineer building scalable ETL pipelines,
+              cloud data platforms, and AI-powered analytics applications.
             </p>
             <div className="flex items-center gap-3 mt-4">
               <a
