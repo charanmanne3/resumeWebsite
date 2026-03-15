@@ -32,25 +32,28 @@ export function Navbar() {
           : "bg-transparent"
       )}
     >
-      <nav className="mx-auto max-w-6xl px-4 sm:px-6 lg:px-8">
-        <div className="flex h-16 items-center justify-between">
-          <div className="hidden md:flex items-center gap-1">
+      <nav className="w-full flex h-16 items-center justify-between px-4 sm:px-6 lg:px-8 max-w-6xl mx-auto">
+        <div className="flex-1 hidden md:block" aria-hidden />
+        <div className="flex-1 hidden md:flex justify-center">
+          <ul className="flex gap-4 lg:gap-8 items-center">
             {NAV_LINKS.map((link) => (
-              <Link
-                key={link.href}
-                href={link.href}
-                className={cn(
-                  "px-3 py-2 text-sm rounded-lg transition-colors",
-                  pathname === link.href
-                    ? "text-foreground bg-accent"
-                    : "text-muted-foreground hover:text-foreground hover:bg-accent/50"
-                )}
-              >
-                {link.label}
-              </Link>
+              <li key={link.href}>
+                <Link
+                  href={link.href}
+                  className={cn(
+                    "px-3 py-2 text-sm rounded-lg transition-colors",
+                    pathname === link.href
+                      ? "text-foreground bg-accent"
+                      : "text-muted-foreground hover:text-foreground hover:bg-accent/50"
+                  )}
+                >
+                  {link.label}
+                </Link>
+              </li>
             ))}
-          </div>
-
+          </ul>
+        </div>
+        <div className="flex-1 flex items-center justify-end gap-2">
           <div className="hidden md:flex items-center gap-2">
             <a
               href={SITE_CONFIG.github}
@@ -71,7 +74,6 @@ export function Navbar() {
               <Linkedin className="h-5 w-5" />
             </a>
           </div>
-
           <button
             onClick={() => setIsOpen(!isOpen)}
             className="md:hidden p-2 rounded-lg text-muted-foreground hover:text-foreground hover:bg-accent transition-colors"
