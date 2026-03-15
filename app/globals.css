@@ -75,6 +75,12 @@ body {
   @apply bg-slate-900/70 backdrop-blur-md border border-slate-700/50;
 }
 
+/* Hardware acceleration for animated elements */
+.gpu-accelerate {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
 .hero-gradient {
   background: radial-gradient(ellipse 80% 50% at 50% -20%, rgba(120, 119, 198, 0.15), transparent);
 }

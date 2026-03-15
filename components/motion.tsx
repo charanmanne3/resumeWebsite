@@ -2,6 +2,7 @@
 
 import { motion, type HTMLMotionProps } from "framer-motion";
 import { type ReactNode } from "react";
+import { cn } from "@/lib/utils";
 
 interface FadeInProps extends HTMLMotionProps<"div"> {
   children: ReactNode;
@@ -29,8 +30,8 @@ export function FadeIn({
       initial={{ opacity: 0, ...directions[direction] }}
       whileInView={{ opacity: 1, x: 0, y: 0 }}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.5, delay, ease: "easeOut" }}
-      className={className}
+      transition={{ duration: 0.4, delay, ease: "easeOut" }}
+      className={cn("gpu-accelerate", className)}
       {...props}
     >
       {children}
@@ -52,7 +53,7 @@ export function StaggerContainer({
       initial="hidden"
       whileInView="visible"
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ staggerChildren: 0.1, delayChildren: delay }}
+      transition={{ staggerChildren: 0.08, delayChildren: delay }}
       className={className}
     >
       {children}
@@ -73,7 +74,7 @@ export function StaggerItem({
         hidden: { opacity: 0, y: 20 },
         visible: { opacity: 1, y: 0 },
       }}
-      transition={{ duration: 0.5, ease: "easeOut" }}
+      transition={{ duration: 0.4, ease: "easeOut" }}
       className={className}
     >
       {children}
@@ -95,7 +96,7 @@ export function ScaleIn({
       initial={{ opacity: 0, scale: 0.95 }}
       whileInView={{ opacity: 1, scale: 1 }}
       viewport={{ once: true, margin: "-100px" }}
-      transition={{ duration: 0.5, delay, ease: "easeOut" }}
+      transition={{ duration: 0.4, delay, ease: "easeOut" }}
       className={className}
     >
       {children}

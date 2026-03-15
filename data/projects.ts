@@ -23,11 +23,11 @@ export const projects: Project[] = [
   {
     title: "Autonomous Data Science Lab",
     description:
-      "Built a modular multi-agent workflow that automates dataset loading, cleaning, feature engineering, model training, evaluation, and reporting. Implemented experiment tracking with MLflow and exposed the pipeline via FastAPI with scheduled orchestration using Airflow.",
+      "Built a modular multi-agent workflow that automates dataset loading, cleaning, feature engineering, model training, evaluation, and report generation. Implemented experiment tracking with MLflow and exposed the pipeline via FastAPI with scheduled orchestration using Airflow.",
     longDescription:
       "An automated machine learning pipeline that orchestrates the full data science lifecycle. The multi-agent system handles dataset loading, data cleaning, feature engineering, model training with scikit-learn, evaluation, and reporting. MLflow tracks experiments for reproducibility. The pipeline is exposed via FastAPI and scheduled with Apache Airflow for automated runs.",
     technologies: ["Python", "FastAPI", "Airflow", "MLflow", "scikit-learn", "Docker", "PostgreSQL"],
-    github: "https://github.com/charanmanne3/autonomous-data-science-lab",
+    github: "https://github.com/charanmanne3/autonomous-ds-lab",
     featured: true,
   },
   {

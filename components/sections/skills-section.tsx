@@ -51,7 +51,7 @@ export function SkillsSection() {
                         "0 0 20px -5px rgba(120, 119, 198, 0.3), 0 0 40px -10px rgba(120, 119, 198, 0.2)",
                     }}
                     transition={{ duration: 0.2 }}
-                    className="h-full"
+                    className="h-full gpu-accelerate"
                   >
                     <Card className="relative h-full overflow-hidden border-border">
                       {/* Gradient top border */}
@@ -68,13 +68,9 @@ export function SkillsSection() {
                       <CardContent>
                         <div className="flex flex-wrap gap-2">
                           {category.skills.map((skill) => (
-                            <motion.div
-                              key={skill}
-                              whileHover={{ scale: 1.05 }}
-                              transition={{ duration: 0.15 }}
-                            >
-                              <Badge variant="secondary">{skill}</Badge>
-                            </motion.div>
+                            <Badge key={skill} variant="secondary">
+                              {skill}
+                            </Badge>
                           ))}
                         </div>
                       </CardContent>

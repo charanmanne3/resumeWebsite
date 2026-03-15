@@ -13,69 +13,35 @@ export function DataEngineeringBackground() {
   const options: ISourceOptions = useMemo(
     () => ({
       fullScreen: false,
-      fpsLimit: 60,
+      fpsLimit: 30,
       detectRetina: true,
       particles: {
-        number: {
-          value: 70,
-          density: {
-            enable: true,
-            area: 900,
-          },
-        },
+        number: { value: 35 },
         color: {
           value: "#60A5FA",
         },
         shape: {
           type: "circle",
         },
-        opacity: {
-          value: { min: 0.4, max: 0.7 },
-          animation: {
-            enable: true,
-            speed: 0.5,
-            minimumValue: 0.3,
-            sync: false,
-          },
-        },
+        opacity: { value: 0.4 },
         size: {
-          value: { min: 1.5, max: 4 },
-          animation: {
-            enable: true,
-            speed: 1.2,
-            minimumValue: 0.8,
-            sync: false,
-          },
-        },
-        shadow: {
-          blur: 12,
-          color: "rgba(96,165,250,0.6)",
-          enable: true,
+          value: { min: 1.5, max: 3 },
         },
         links: {
           enable: true,
-          distance: 170,
+          distance: 150,
           color: "#38BDF8",
-          opacity: 0.6,
-          width: 1.2,
-          triangles: {
-            enable: true,
-            opacity: 0.03,
-            color: "#38BDF8",
-          },
+          opacity: 0.3,
+          width: 1,
+          triangles: { enable: false },
         },
         move: {
           enable: true,
-          speed: 0.6,
+          speed: 0.3,
           direction: "none",
           random: true,
           straight: false,
-          outModes: {
-            default: "bounce",
-          },
-          attract: {
-            enable: false,
-          },
+          outModes: { default: "bounce" },
         },
         collisions: {
           enable: false,
@@ -88,18 +54,13 @@ export function DataEngineeringBackground() {
             enable: true,
             mode: "grab",
           },
-          onClick: {
-            enable: false,
-          },
+          onClick: { enable: false },
           resize: true,
         },
         modes: {
           grab: {
-            distance: 160,
-            links: {
-              opacity: 0.8,
-              color: "#60A5FA",
-            },
+            distance: 120,
+            links: { opacity: 0.5 },
           },
         },
       },
@@ -111,7 +72,7 @@ export function DataEngineeringBackground() {
   );
 
   return (
-    <div className="fixed inset-0 -z-10" aria-hidden="true">
+    <div className="fixed inset-0 -z-10" style={{ transform: "translateZ(0)" }} aria-hidden="true">
       {/* Base gradient — brighter slate/blue/indigo */}
       <div className="absolute inset-0 bg-gradient-to-br from-slate-900 via-blue-950 to-indigo-950" />
 
