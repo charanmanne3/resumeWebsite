@@ -17,6 +17,7 @@ export const projects: Project[] = [
     longDescription:
       "A comprehensive ETL pipeline that automates the collection and analysis of tech job market data. Built with Apache Airflow for workflow orchestration, Python for data processing, Pandas for transformation, and Streamlit for interactive dashboards. The pipeline ingests data from job APIs, cleans and transforms it, and loads it into PostgreSQL for analytics. The Streamlit dashboard provides visualizations of hiring trends, in-demand skills, and market signals.",
     technologies: ["Python", "Apache Airflow", "Docker", "PostgreSQL", "Pandas", "Streamlit"],
+    github: "https://github.com/charanmanne3/tech-job-market-analytics-pipeline",
     featured: true,
   },
   {
@@ -26,6 +27,7 @@ export const projects: Project[] = [
     longDescription:
       "An automated machine learning pipeline that orchestrates the full data science lifecycle. The multi-agent system handles dataset loading, data cleaning, feature engineering, model training with scikit-learn, evaluation, and reporting. MLflow tracks experiments for reproducibility. The pipeline is exposed via FastAPI and scheduled with Apache Airflow for automated runs.",
     technologies: ["Python", "FastAPI", "Airflow", "MLflow", "scikit-learn", "Docker", "PostgreSQL"],
+    github: "https://github.com/charanmanne3/autonomous-data-science-lab",
     featured: true,
   },
   {
@@ -35,6 +37,7 @@ export const projects: Project[] = [
     longDescription:
       "A serverless data pipeline on AWS that ingests data from Salesforce APIs and web sources into S3. AWS Glue with PySpark handles transformation and schema evolution. Amazon Athena provides SQL querying over the data lake, and QuickSight dashboards enable business intelligence and reporting.",
     technologies: ["AWS Glue", "PySpark", "Athena", "QuickSight", "S3", "Salesforce APIs"],
+    github: "https://github.com/charanmanne3/real-time-cloud-data-pipeline",
     featured: true,
   },
 ];

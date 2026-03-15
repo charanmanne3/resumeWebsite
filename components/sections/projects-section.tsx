@@ -92,6 +92,20 @@ export function ProjectsSection() {
                           ))}
                         </div>
                       )}
+                      {project.github && (
+                        <Button asChild variant="outline" size="sm" className="w-full sm:w-auto">
+                          <Link
+                            href={project.github}
+                            target="_blank"
+                            rel="noopener noreferrer"
+                            className="gap-2"
+                            aria-label={`View ${project.title} on GitHub`}
+                          >
+                            <Github className="h-4 w-4" />
+                            GitHub
+                          </Link>
+                        </Button>
+                      )}
                     </CardContent>
                   </Card>
                 </motion.div>
